@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.59.1'
+project:
+    name: EDU
+    package:
+        name: n
+        api_version: '54.0'
+    dependencies:
+        - github: 'https://github.com/shikhamalviya22/EDU.git'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/EDU/tests
+            options:
+                outputdir: robot/EDU/results
+
+    robot_testdoc:
+        options:
+            path: robot/EDU/tests
+            output: robot/EDU/doc/EDU_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
