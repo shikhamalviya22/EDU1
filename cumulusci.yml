@@ -3,6 +3,7 @@ project:
     name: EDU
     package:
         name: n
+        namespace: admncnnect
         api_version: '54.0'
     dependencies:
         - github: 'https://github.com/shikhamalviya22/EDU.git'
